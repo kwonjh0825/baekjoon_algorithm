@@ -1,7 +1,9 @@
-n = int(input())
+import sys
+
+n = int(sys.stdin.readline())
 li = []
 for _ in range(n):
-    age, name = input().split()
+    age, name = sys.stdin.readline().split()
     li.append([int(age), name])
 
 li.sort(key=lambda x:x[0])
