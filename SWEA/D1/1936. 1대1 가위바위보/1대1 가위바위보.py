@@ -1,11 +1,8 @@
+
 a, b = map(int, input().split())
-if a < 3:
-    if b == (a + 1):
-        print('B')
-    else:
-        print('A')
+result = [0, 1, 2, 3, 1]
+
+if result[b] == result[a+1]:
+    print('B')
 else:
-    if b == 1:
-        print('B')
-    else:
-        print('A')
+    print('A')
