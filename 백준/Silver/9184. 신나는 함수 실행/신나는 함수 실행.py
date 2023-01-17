@@ -9,9 +9,8 @@ def w(a, b, c):
         return li[a][b][c]
     if a < b and b < c:
         li[a][b][c] =  w(a, b, c - 1) + w(a, b-1, c-1) - w(a, b-1, c)
-        return li[a][b][c]
-    
-    li[a][b][c] = w(a-1, b, c) + w(a-1, b-1, c) + w(a-1, b, c-1) - w(a-1, b-1, c-1)
+    else:
+        li[a][b][c] = w(a-1, b, c) + w(a-1, b-1, c) + w(a-1, b, c-1) - w(a-1, b-1, c-1)
     return li[a][b][c]
 
 while True:
