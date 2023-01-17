@@ -1,7 +1,3 @@
-n = int(input())
-a = [int(input()) for i in range(n)]
-    
-a.sort()
-
-for k in a:
-    print(k)
+N = int(input())
+li = [int(input()) for _ in range(N)]
+print(*sorted(li), sep='\n')
