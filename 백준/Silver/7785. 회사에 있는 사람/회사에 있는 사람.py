@@ -9,7 +9,4 @@ for _ in range(n):
         work[name] = 1
     else:
         work[name] = 0
-work = sorted(work.items(), reverse=True)
-for w in work:
-    if w[1] == 1:
-        print(w[0])
+print(*(sorted([w for w, s in work.items() if s == 1], reverse=True)), sep='\n')
