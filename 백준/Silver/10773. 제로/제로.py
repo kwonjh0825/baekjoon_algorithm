@@ -9,8 +9,4 @@ for _ in range(k):
         li.append(n)
     else:
         li.pop()
-if li:
-    print(sum(li))
-
-else:
-    print(0)
+print(sum(li))
